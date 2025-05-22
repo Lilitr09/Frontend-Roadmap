@@ -1,0 +1,14 @@
+/* General Styles */
+* {
+    font-family: sans-serif;
+    font-family: 2rem;
+}
+body {
+    margin: 25px;
+}
+h2 {
+    color: rgb(75, 170, 96);
+}
+h3 {
+    color: rgb(100, 159, 207);
+}

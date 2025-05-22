@@ -8,3 +8,5 @@
 + SEO Meta Tags
 + Open Graph (OG) Tags
 + Favicon
+
+## [Single Page CV](https://roadmap.sh/projects/single-page-cv)

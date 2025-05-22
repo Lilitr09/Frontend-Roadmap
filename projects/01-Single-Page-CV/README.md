@@ -1,7 +1,7 @@
 # Single Page CV
 
 ## Preview
-![]()
+![](./single-page-cv.png)
 
 ## Key Requirements:
 + Semantic HTML

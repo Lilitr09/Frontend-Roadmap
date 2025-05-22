@@ -6,4 +6,4 @@
 | No| Project | Link |
 |---|---------|------|
 | 1 | [Single-Page CV](https://roadmap.sh/projects/single-page-cv) | [link] |
-| 2 | Basic HTML Website | [link] |
+| 2 | [Basic HTML Website](https://roadmap.sh/projects/basic-html-website) | [link] |

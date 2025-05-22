@@ -1,4 +1,4 @@
-# Single Page CV
+# [Single Page CV](https://roadmap.sh/projects/single-page-cv)
 
 ## Preview
 ![](./single-page-cv.png)
@@ -8,5 +8,3 @@
 + SEO Meta Tags
 + Open Graph (OG) Tags
 + Favicon
-
-## [Single Page CV](https://roadmap.sh/projects/single-page-cv)

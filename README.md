@@ -5,5 +5,5 @@
 ## Beginner Projects
 | No| Project | Link |
 |---|---------|------|
-| 1 | [Single-Page CV](./projects/01-Single-Page-CV/README.md) | [link] |
+| 1 | [Single-Page CV](https://roadmap.sh/projects/single-page-cv) | [link] |
 | 2 | Basic HTML Website | [link] |

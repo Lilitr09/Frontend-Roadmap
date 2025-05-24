@@ -1,16 +1,34 @@
+/* Dark and Light modes */
+:root {
+    /*Default Values */
+    --bg-color: rgba(255, 255, 255, 0.884);
+    --text-color: black;
+    --link-color: rgb(90, 173, 212);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color:  rgb(77, 72, 72);
+        --text-color: rgba(255, 255, 255, 0.884);
+        --link-color: rgb(90, 212, 106);
+    }
+}
+
+
 /* General Styles */
 body {
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.884);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     font-family: sans-serif;
 }
 a {
     text-decoration: none;
-    color: rgb(90, 163, 212);
+    color: var(--link-color);
     font-size: 1.1rem;
 }
 footer {
@@ -75,7 +93,7 @@ footer {
     margin-top: 40px;
 }
 .reviews-item {
-    border: 1px solid rgb(90, 163, 212);
+    border: 1px solid var(--link-color);
     border-radius: 1rem;
     margin: 15px;
     padding: 15px;
@@ -107,11 +125,106 @@ footer {
 .review-author {
     margin: 0;
     font-weight: bold;
-    color: rgb(90, 163, 212);
+    color: var(--link-color);
     font-size: 0.9rem;
 }
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid var(--link-color);
+    border-radius: 1rem;
+    padding: 20px;
+    font-size: 1rem;
+    max-width: 800px;
+}
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+.p-title {
+    margin: 20px;
+}
+.contact-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    padding: 50px;
+}
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: var(--link-color);
+    font-size: 2.2rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
 
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 0 5px 0;
+    border: none;
+    border-bottom: 2px solid var(--link-color);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    resize: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--link-color);
+    box-shadow: 0 0 0 2px var(--link-color);
+}
+.form-group textarea {
+    min-height: 100px;
+}
+.form-group label {
 
+    top: 15px;
+    left: 0;
+    color: var(--link-color);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.submit-btn {
+    background-color: var(--link-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.submit-btn:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(0);
+}
+.submit-btn:active {
+    transform: translateY(0);
+}
 /* Media Query */
 @media screen and (max-width: 800px) {
     .id {

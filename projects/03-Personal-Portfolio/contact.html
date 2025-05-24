@@ -35,18 +35,29 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h2>Contact Form</h2>
-        <form action="mailto:mail@example.com">
-            <label for="name" placeholde="Your name">Name</label>
-            <input type="text" placeholde="Your email"><br>
-            <label for="email">Email</label>
-            <input type="text"><br>
-            <label for="message">Message:</label><br>
-            <textarea name="message" id="message" placeholder="Let's talk" cols="25" rows="4"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
+    <main  class="contact-body">
+        <div class="contact-container">
+            <h2>Contact Form</h2>
+            <form action="mailto:mail@example.com" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" cols="25" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
     </main>
+    <footer>
+        <p>&copy; all rights reserved 2025</p>
+    </footer>
     
 </body>
 </html>

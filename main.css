@@ -15,6 +15,10 @@
 * {
     font-family: "Bebas Neue"
 }
+a{
+    font-family: sans-serif !important;
+    text-decoration: none !important;
+}
 body {
     display: grid;
     min-height: 100dvh;
@@ -26,28 +30,65 @@ footer {
     text-align: center;
 }
 header {
-    height: 350px;
+    height: 400px;
     background-color: var(--secondary);
     color: white;
 }
 main {
     background-color: var(--secondary);
 }
+h5 {
+    color: var(--light) !important;
+}
 footer {
+    height: 100px;
     background-color: var(--dark);
     color: white;
+    font-size: 20px;
 }
 
-.card-border {
-    border: 1px solid rgba(246, 114, 128, 0.3);
+.card-custom {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(246, 114, 128, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.4s ease !important;
+}
+.card-custom:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 8px 32px rgba(246, 114, 128, 0.2) !important;
+
 }
 .card .btn-primary {
     background-color: var(--primary);
     border: none;
 }
+.card .btn-primary:hover {
+    background-color: var(--light);
+}
 .card .btn-secondary {
     background-color: var(--secondary);
     border: none;
+}
+.card .btn-secondary:hover {
+    background-color: var(--accent);
+}
+.card-text {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+#title {
+    font-size: 4rem;
+}
+#by {
+    font-size: 1rem;
+    font-family: sans-serif !important;
+    color: var(--light);
+}
+#by a {
+    color: var(--light) !important;
 }
 
 

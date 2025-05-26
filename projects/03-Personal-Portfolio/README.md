@@ -1,7 +1,7 @@
 # [Personal Portfolio](https://roadmap.sh/projects/basic-html-website)
 
 ## Preview
-![]()
+![](./Personal-Portfolio.png)
 
 ## Key Requirements:
 

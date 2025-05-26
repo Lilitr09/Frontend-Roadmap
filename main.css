@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+:root {
+    --primary: #f67280;
+    --secondary: #6c5b7be1;
+    --dark: #355c7d;
+    --accent: #c06c84;
+    --light: #f8b195;
+}
+
+/* General Styles */
+* {
+    font-family: "Bebas Neue"
+}
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+}
+header,
+footer {
+    text-align: center;
+}
+header {
+    height: 350px;
+    background-color: var(--secondary);
+    color: white;
+}
+main {
+    background-color: var(--secondary);
+}
+footer {
+    background-color: var(--dark);
+    color: white;
+}
+
+.card-border {
+    border: 1px solid rgba(246, 114, 128, 0.3);
+}
+.card .btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+.card .btn-secondary {
+    background-color: var(--secondary);
+    border: none;
+}
+
+
